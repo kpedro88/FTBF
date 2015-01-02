@@ -1,0 +1,6 @@
+#!/bin/bash
+
+for DATASET in Ch2_LS_mirrored_bottomleft Ch2_LS_mirrored_topleft Ch2_LS_mirrored_center Ch2_LS_mirrored_center_steel Ch2_LS_mirrored_topright Ch2_LS_mirrored_bottomright Ch2_LS_nonmirrored_bottomleft Ch2_LS_nonmirrored_topleft Ch2_LS_nonmirrored_topright Ch2_LS_nonmirrored_bottomright Ch2_LS_nonmirrored_center Ch2_LS_nonmirrored_center_steel Ch2_LS_nonmirrored_center_proton Ch2_LS_mirrored_center_proton Ch2_pedestal Ch2_HE_center Ch2_HE_center_steel Ch2_EJ200_center Ch2_EJ200_center_proton Ch2_HE_center_proton Ch2_LS_mirrored_bottomright_proton
+  do
+    hadd ntuples/${DATASET}.root ntuples/${DATASET}_run*.root
+  done
